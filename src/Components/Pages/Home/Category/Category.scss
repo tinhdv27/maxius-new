@@ -1,0 +1,46 @@
+.category {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(../../../../Assets/Images/banner-03.png);
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  &-item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-left: 35px;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    &:not(:nth-child(4)) {
+      border-right: 1px solid #fff;
+    }
+    &:hover {
+      display: block;
+      float: left;
+      width: 460px;
+      background-color: rgba($color: #fff, $alpha: 0.1);
+    }
+    &:hover .category-paragraph {
+      display: block;
+    }
+  }
+  &-heading {
+    line-height: 4.97;
+    font-size: 33px;
+    font-weight: bold;
+  }
+  &-paragraph {
+    display: none;
+  }
+
+  .even1 {
+    color: #ff9933;
+  }
+}
